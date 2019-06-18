@@ -1,13 +1,20 @@
 # SunPy Core Roadmap
 
+## 2.0 (May 2020)
 
-## 1.0
-Planned release by June 2019 with associated paper. The details of this release are held as a [Project](https://github.com/sunpy/sunpy/projects/6) on github.
+* Add support for spectra.
+  * Add Fido clients that provide spectral data (e.g. SDO/EVE, IRIS raster, MinXSS, Solar Spectral Irradiance)
+  * Implement Spectrum factory
+  * Implement GenericSpectrum class
+* Implement NDCube as base class for Map objects.
+* Expand solar models (e.g. canonical flare spectrum, coronal density as a function of height)
+* Improve CompositeMap support and provide support for overlaying images for visualization using reprojection
+* Improve Fido attribute discovery
 
-## 2.0
+## 3.0 (May 2021)
 
-* Create a generic command to read in files such as `sunpy.open()` or `sunpy.read()`
-* Move to use NDCube as base data object in Maps. NDCube object will become the default object returned if a file is not recognized as a defined base data object.
-* Provide improved spectrum support including fitting data models.
+## Future
+The following roadmap items should be scheduled to particular releases as appropriate.
 
-## 3.0
+* Provide support for fitting spectral models to spectra.
+* Add support for multidimensional datasets with NDCube as base class.
